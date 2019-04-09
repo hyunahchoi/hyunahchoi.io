@@ -1,0 +1,62 @@
+body { letter-spacing: -1px; }
+.wrap { width: 100%; height: 100%; overflow-x: hidden; position: relative; text-align: center; }
+.ck { display: none; }
+.hd { width: 100%; height: 59px; background-color: rgba(0,0,0,0.8); position: fixed; z-index: 20; }
+.logoFrame { width: 100%; text-align: center; position: relative; }
+.logoFrame .logo { padding-top: 12px; }
+.gnbCall { width: 50px; height: 59px; }
+.gnbCall img { position: absolute; top: 22px; left: 30px; }
+#gnb { background-color: #000; width: 100%; height: 0px; transition: 0.6s; overflow-y: scroll; }
+#ck1:checked ~ #gnb { height: 100%; }
+#gnb .upGnb { padding-top: 90px; }
+#gnb .upGnb .subCall { font-size: 20px; line-height: 50px; font-weight: normal; display: block; color: #fff; text-align: center; letter-spacing: 0.5px; }
+#gnb .upGnb a { color: #fff; text-align: center; display: block; }
+#gnb .upGnb [class*=sub] a { font-size: 13px; line-height: 20px; }
+#gnb .upGnb .sub1 { transition: 0.6s; height: 0; overflow: hidden; }
+#ck2:checked ~ .sub1 { height: 180px; display: block; overflow: hidden; }
+#gnb .upGnb .sub2 { transition: 0.6s; height: 0; overflow: hidden; }
+#ck3:checked ~ .sub2 { height: 180px; opacity: 1; display: block; overflow: hidden; }
+#gnb .upGnb .sub3 { transition: 0.6s; height: 0; overflow: hidden; }
+#ck4:checked ~ .sub3 { height: 80px; opacity: 1; display: block; overflow: hidden; }
+#gnb .upGnb .sub4 { transition: 0.6s; height: 0; overflow: hidden; }
+#ck5:checked ~ .sub4 { height: 160px; opacity: 1; display: block; overflow: hidden; }
+#gnb .upGnb .sub5 { transition: 0.6s; height: 0; overflow: hidden; }
+#ck6:checked ~ .sub5 { height: 100px; opacity: 1; display: block; overflow: hidden; }
+
+.midGnb {}
+.midGnb a { color: #f37321; text-align: center; display: block; font-size: 20px; line-height: 50px; letter-spacing: 0.5px; }
+
+.bottomGnb {}
+.bottomGnb a { color: #fff; text-align: center; display: block; font-size: 16px; line-height: 40px; letter-spacing: 0.5px; }
+
+.snsBox { width: 100%; text-align: center; margin-top: 10px; }
+.snsGnb { overflow: hidden; display: block; text-align: center; width: 160px;  margin: 0 auto; margin-bottom: 20px; }
+.snsGnb li { float: left; width: 40px; text-align: center; display: block; padding-right: 20px; }
+.snsGnb li:last-child { padding-right: 0; }
+.snsGnb li a { width: 40px; height: 40px; display: block; }
+.snsGnb li img { width: 30px; height: 30px; display: block; padding-left: 5px; padding-top: 5px; }
+
+
+/*메인 콘텐츠*/
+/*슬라이드*/
+.con { width: 100%; clear: both; position: relative; }
+.slide { width: 100%; height: 500px; margin: 0 auto; overflow: hidden; position: relative; }
+.imgBox { width: 100%; height: 500px; position: relative; background-color: #000; }
+.imgBox li { width: 100%; height: 559px; position:absolute; 
+left:0px; top: 0; opacity:0; transition-duration:0.8s;  transition-delay:0.1s; transition-timing-function:ease-in; }
+.imgBox img { display: block; width: 100%; }
+.imgBox li.on { opacity:1; left:0px; }
+
+.btnFrame { position:absolute; width:100%; top:329px; z-index:60;  } 
+.btnBox { position:relative; width:100%; margin:0 auto; }
+.btnBox li { width:33.33333%; float: left; height:20px; position:absolute;  top:2px; }
+.btnBox li.item1 { left:0; }
+.btnBox li.item2 { left:33.33333%; }
+.btnBox li.item3 { left:66.66666% }
+.btnBox li .btn { display:block; width:100%; background:#ffffff; border:1px solid #000000; transition: 1s; }
+.btnBox li .btn.on { border:1px solid #f37321; }
+
+/*퀵메뉴*/
+.quickMenu { z-index: 80; position: absolute; top: 333px; width: 100%; background-color: rgba(255, 255, 255, 0.1s); }
+.quickMenu li { line-height: 56px; }
+.quickMenu a { color: #fff; }
