@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title>GoPro HERO7 Black 고프로 히어로7 블랙</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./ico/favicon16.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="./ico/favicon32.png">
+    <link rel="apple-touch-icon" size="57x57" href="./ico/favicon57.png">
+    <link rel="apple-touch-icon" size="72x72" href="./ico/favicon72.png">
+    <link rel="apple-touch-icon" size="114x114" href="./ico/favicon114.png">
+    
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="mobile.js"></script>
+    <style>
+    @media screen and (max-width:767px) {
+/*        모바일*/
+        .mobile { display: block; }
+        .desk { display: none; }
+    }
+    @media screen and (max-width:959px) and (min-width:768px) {
+/*    태블릿        */
+        .mobile { display: block; }
+        .desk { display: none; }
+    }
+    @media screen and (max-width:1279px) and (min-width:960px) {
+/*        데스크탑 저해상도    */
+        .mobile { display: none; }
+        .desk { display: block; }
+    }
+    @media screen and (min-width:1280px) {
+/*        데스크탑 고해상도*/
+        .mobile { display: none; }
+        .desk { display: block; }
+    }
+    </style>
+</head>
+<body>
+<!--   모바일-->
+    <div class="wrap mobile">
+        <input type="checkbox" id="ck1" class="ck">
+        <header class="hd">
+            <h1 class="logoFrame">
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="고프로 히어로7 블랙 로고">
+                </a>
+                <label for="ck1" class="gnbCall">
+                    <img src="./img/gnb_menu.png" alt="">
+                </label>
+            </h1>
+        </header>
+        <nav id="gnb">
+            <header class="gnbHd">
+            <h1 class="logoFrame">
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="고프로 히어로7 블랙 로고">
+                </a>
+                <label for="ck1" class="closeBtn">
+                    <img src="./img/gnb_close.png" alt="닫기">
+                </label>
+            </h1>
+            </header>
+            <ul>
+                <li><a href="">고프로 히어로7 블랙</a></li>
+                <li><a href="">개요</a></li>
+                <li><a href="">기술 사양</a></li>
+                <li><a href="">리뷰</a></li>
+            </ul>
+            <div class="gnbBottom">
+                
+            </div>
+        </nav>
+        <main class="content">
+            <div class="vrBox">
+                <img src="./img/vr_b_01.png" alt="">
+            </div>
+            <div class="conBox">
+                
+            </div>
+        </main>
+        <footer class="ft">
+            
+        </footer>
+    </div>
+<!--    데스크탑-->
+    <div class="wrap desk">
+        <div class="left_side">
+            
+        </div>
+        <div class="right_side">
+            <main class="content">
+                
+            </main>
+            <footet class="ft">
+                
+            </footet>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*헤더 모바일*/
+.wrap { width: 100%; height: 100%; }
+.hd { width: 100%; height: 60px; background-color: #3e3e3e; float: left; position: relative; }
+.hd .logoFrame { width: 100%; height: 60px; text-align: center; overflow: hidden; display: inline-block; }
+.hd > .logoFrame > a > img { height: 80%; width: auto; margin-top: 6px; }
+.gnbCall { position: absolute; top: 7px; right: 14px; }
+
+/*gnb*/
+.ck { display: none; }
+#ck1:checked ~ #gnb { display: block; }
+#gnb { display: none; width: 100%; height: auto; background-color: #3e3e3e; text-align: center; position: fixed; top: 0px; transition: 0.6s; }
+#gnb li { line-height: 5; }
+#gnb li a { color: #fff; font-weight: bold; letter-spacing: -1px; font-size: 1em;}
+
+.gnbBottom { width: 100%; height: 70px; display: block; background-image: url("./img/gnb_logo.png"); background-size: 40%; background-repeat: no-repeat; background-position: center center; }
+.gnbHd { width: 100%; height: 60px; background-color: #03bffe; float: left; position: relative; }
+.gnbHd .logoFrame { width: 100%; height: 60px; text-align: center; overflow: hidden; display: inline-block; }
+.gnbHd > .logoFrame > a > img { height: 80%; width: auto; margin-top: 6px; }
+.closeBtn { position: absolute; top: 15px; right: 14px; }
+
+/*메인 컨텐츠 모바일*/
+.content { width: 100%; height: auto; }
+.vrBox { width: 100%; }
+.vrBox img { width: 70%; display: block; margin: 0 auto; }
+.conBox { width: 100%; height: 1000px; background-image: url("./img/main_back.jpg"); background-position: left top; background-size: 100%; background-repeat: no-repeat; }
