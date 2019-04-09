@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D MUSEUM 디 뮤지엄</title>
+<!--    파비콘 설정-->
+<!--   구형 브라우저-->
+    <link rel="shortcut icon" type="image/x-icon" href="./ico/favicon16.ico">
+<!--    신형 브라우저와 안드로이드 폰-->
+    <link rel="shortcut icon" type="image/x-icon" href="./ico/favicon32.png">
+<!--    아이폰3 이하-->
+    <link rel="apple-touch-icon" size="57x57" href="./ico/favicon57.png">
+<!--    아이패드-->
+    <link rel="apple-touch-icon" size="72x72" href="./ico/favicon72.png">
+<!--    아이폰4 이상-->
+    <link rel="apple-touch-icon" size="114x114" href="./ico/favicon114.png">
+    
+<!--    뷰포트 설정-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+<!--    메타데이터 개발 공통 사항-->
+<!--    데스크탑에서 IE로 문서를 열 때 가장 최신 버전으로 실행-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    
+<!--    앱(웹 사이트)의 이름-->
+    <meta name="application-name" content="D MUSEUM Site">
+<!--    웹 사이트 저작자의 이름-->
+    <meta name="author" content="Hyunah Choi">
+<!--    현재 문서의 설명-->
+    <meta name="description" content="D MUSEUM Site Mainpage">
+<!--    현재 문서의 저작도구-->
+    <meta name="generator" content="Brackets">
+<!--    검색엔진에서 검색되게할 키워드-->
+    <meta name="keywords" content="디뮤지엄, D MUSEUM, 미술관, 서울 미술관, 한남동 미술관">
+    
+<!--    웹 폰트 파일 로딩-->
+    <link rel="stylesheet" href="font.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+<!--    초기화 파일 로딩-->
+    <link rel="stylesheet" href="reset.css">
+<!--    jQuery Mobile을 사용시 css 로딩-->
+    <link rel="stylesheet" href="">
+<!--    스타일 파일로딩-->
+    <link rel="stylesheet" href="style.css">
+<!--    jQuery Mobile을 사용시 js 로딩-->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="mobile.js"></script>
+</head>
+<body>
+    <input type="radio" name="collap_ra" class="raItme" id="no_sel" checked>
+    <input type="radio" name="collap_ra" class="raItme" id="sel1">
+    <input type="radio" name="collap_ra" class="raItme" id="sel2">
+    <input type="radio" name="collap_ra" class="raItme" id="sel3">
+    <input type="radio" name="collap_ra" class="raItme" id="sel4">
+    <header class="hd">
+        <label for="sel1" class="calendar mo">
+            <img src="./img/calendar.png" alt="일정">
+        </label>
+        <h1 class="logoFrame">
+            <a href="index.html" class="logo">
+                <img src="./img/logo.png" alt="디뮤지엄 로고">
+            </a>
+        </h1>
+        <label for="sel2" class="gnb mo">
+            <img src="./img/menu.png" alt="메뉴">
+        </label>
+    </header>
+    <div id="calendar">
+        <h2 class="title">D CALENDAR</h2>
+        <a href="" class="calBox">
+            <div class="calBoxImg">
+                <img src="./img/cal_vs1.jpg" alt="그리는 것보다 멋진 건 없어">
+            </div>
+            <div class="calBoxTxt">
+                <span class="calLogo"></span>
+                <p class="calTit">
+                    I draw 그리는 것보다 멋진 건 없어
+                </p>
+                <p class="calDate">
+                    2019.02.14 ~ 2019.09.01
+                </p>
+                <p class="calMore">
+                    자세히 보기
+                <span class="arrow"></span>
+                </p>
+            </div>
+        </a>
+    </div>
+    <div id="gnb">
+        <div class="gnbTop">
+            <ul>
+                <li><a href="">Login</a></li>
+                <li><a href="">Join</a></li>
+            </ul>
+            <label for="no_sel" class="closeBtn">
+                <img src="./img/gnb_close.png" alt="닫기">
+            </label>
+        </div>
+        <div class="gnbMid">
+            <label for="sel1">
+                <span class="calBox">D CALENDAR</span>
+            </label>
+            <ul class="main">
+                <li class="item1">
+                    <label for="ck1" class="subCall">
+                        <span class="menu">VISIT</span>
+                    </label>
+                    <input type="checkbox" id="ck1" class="ck">
+                    <ul class="sub">
+                        <li><a href="">관람 안내</a></li>
+                        <li><a href="">미술관 소개</a></li>
+                        <li><a href="">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li class="item2">
+                    <label for="ck2" class="subCall">
+                        <span class="menu">EXHIBITION</span>
+                    </label>
+                    <input type="checkbox" id="ck2" class="ck">
+                    <ul class="sub">
+                        <li><a href="">현재 전시</a></li>
+                        <li><a href="">지난 전시</a></li>
+                    </ul>
+                </li>
+                <li class="item3">
+                    <label for="ck3" class="subCall">
+                        <span class="menu">PROGRAM</span>
+                    </label>
+                    <input type="checkbox" id="ck3" class="ck">
+                    <ul class="sub">
+                        <li><a href="">한남살롱</a></li>
+                        <li><a href="">CLASS 7PM</a></li>
+                        <li><a href="">ARTIST'S ATELIER</a></li>
+                        <li><a href="">MUSEUM PALETTE</a></li>
+                        <li><a href="">MOM'S MONDAY</a></li>
+                        <li><a href="">SPECIAL WORKSHOP</a></li>
+                        <li><a href="">교육프로그램</a></li>
+                    </ul>
+                </li>
+                <li class="item4">
+                    <label for="ck4" class="subCall">
+                        <span class="menu">LIBRARY</span>
+                    </label>
+                    <input type="checkbox" id="ck4" class="ck">
+                    <ul class="sub">
+                        <li><a href="">D STORY</a></li>
+                        <li><a href="">D MOMENT</a></li>
+                        <li><a href="">D WALLPAPER</a></li>
+                    </ul>
+                </li>
+                <li class="item5">
+                    <label for="ck5" class="subCall">
+                        <span class="menu">NEWS</span>
+                    </label>
+                    <input type="checkbox" id="ck5" class="ck">
+                    <ul class="sub">
+                        <li><a href="">캘린더</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">1:1 문의하기</a></li>
+                        <li><a href="">채용공고</a></li>
+                    </ul>
+                </li>
+                <li class="item6"><a href=""><span class="menu">SNS</span></a></li>
+            </ul>
+        </div>
+        <div class="gnbBottom">
+            <ul class="col6">
+                <li><a href="">디멤버스 안내</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+            <ul class="col4">
+                <li><a href="">관람안내</a></li>
+                <li><a href="">오시는길</a></li>
+                <li><a href="">공지사항</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="login">
+        ㅎㅎ
+    </div>
+    <div id="join">
+        ㅋㅋ
+    </div>
+    
+    <div class="container">
+        <div class="vsBox">
+            <img src="./img/cal_vs1.jpg" alt="그리는 것보다 멋진 건 없어">
+        </div>
+        <div class="con1">
+            <h2 class="mainTit">ENJOY! MUSEUM</h2>
+            <ul class="con1Box">
+                <li class="con1Lst1">
+                    <a href="">
+                    <h3 class="subTit">ONLINE MEMBER</h3>
+                    <p>온라인 회원만의 특별한 헤택!<br>
+                    전시 20% 이상 할인! 회원가입 하기</p>
+                    </a>
+                </li>
+                <li class="con1Lst2">
+                    <a href="">
+                    <h3 class="subTit">MOBILE APP</h3>
+                    <p>모바일 투어로 전시관람을<br>
+                    더 재미있게!</p>
+                    </a>
+                </li>
+                <li class="con1Lst3">
+                    <a href="">
+                    <h3 class="subTit">D MEMBERSHIP CARD</h3>
+                    <p>다채롭게 즐기는<br>
+                    전시3회+FAST PASS+아트상품&amp;커피 할인</p>
+                    </a>
+                </li>
+                <li class="con1Lst4">
+                    <h3 class="subTit">오늘의 관람시간　10:00AM - 6:00PM</h3>
+                    <p>화-일요일 | 10AM - 6PM<br>
+                    금, 토요일 | 10AM - 8PM<br>
+                    * 매주 월요일 휴관<br>
+                    * 5월 6일 (대체공휴일) 정상개관</p>
+                </li>
+                <ul>
+                    <li><a href="">관람 안내</a></li>
+                    <li><a href="">오시는 길</a></li>
+                </ul>
+            </ul>
+        </div>
+<!--        2. UPCOMING PROGRAM-->
+        <div class="con2">
+            <h2 class="mainTit">UPCOMING PROGRAM<span class="titDescript">미술관 특별 프로그램</span></h2>
+            <div class="proBox">
+                <img src="./img/main2_1.jpg" alt="">
+                <p class="upTxt">TEEN LAB　<span class="grey">청소년단체 대상 전시연계 미술관 수업</span></p>
+                <p class="midTxt">청소년을 위한 차별화된 미술관 교육</p>
+                <p class="downTxt">전시 기간 내 상시 진행</p>
+            </div>
+            <div class="proBox">
+                <img src="./img/main2_2.jpg" alt="">
+                <p class="upTxt">FIELD TRIP　<span class="grey">대학생·성인단체 대상 교육프로그램</span></p>
+                <p class="midTxt">에듀케이터와 함께하는 ART UP CLASS</p>
+                <p class="downTxt">전시 기간 내 상시 진행</p>
+            </div>
+        </div>
+<!--        3. REVIEW-->
+        <div class="con3">
+            <h2 class="mainTit">REVIEW<span class="titDescript">미술관 현장의 생생한 이야기</span></h2>
+            <div class="proBox">
+                <img src="./img/main3_1.jpg" alt="">
+                <p class="upTxt">OPENING</p>
+                <p class="midTxt">《I draw: 그리는 것보다 멋진 건 없어》</p>
+                <p class="downTxt">2019.02.22</p>
+            </div>
+        </div>
+<!--        4. NOTICE-->
+        <div class="con4">
+            <a href="">
+                <h2 class="mainTit">NOTICE<span class="more">more</span></h2>
+            </a>
+            <ul>
+                <li>
+                    <p class="notiTit">3/1(금) 삼일절 미술관 정상 운영 안내</p>
+                    <p class="notiDate">2019.02.27</p>
+                </li>
+                <li>
+                    <p class="notiTit">디멤버십 혜택 변경 및 신규 디멤버스 카드 론칭 안내</p>
+                    <p class="notiDate">2019.02.12</p>
+                </li>
+                <li>
+                    <p class="notiTit">《I draw: 그리는 것보다 멋진 건 없어》 전시연계 유치원·초등학교 교사 초청 워크숍</p>
+                    <p class="notiDate">2019.02.07</p>
+                </li>
+            </ul>
+        </div>
+<!--        5. EVENT-->
+        <div class="con5">
+            <a href="">
+                <h2 class="mainTit">EVENT<span class="more">more</span></h2>
+            </a>
+            <ul>
+                <li>
+                    <p class="notiTit">《I draw》전시와 만날 수 있는 아주 특별한 방법! #내가그린초대장 EVENT!</p>
+                    <p class="notiDate">2019.03.19 - 2019.03.31</p>
+                </li>
+                <li>
+                    <p class="notiTit">〈청브페〉청소년이면 누구나 전시 1,000원 관람&amp;아트샵 10% OFF!</p>
+                    <p class="notiDate">2019.02.12</p>
+                </li>
+            </ul>
+        </div>
+        <footer class="ft">
+        <div class="address">
+            <p><span class="highlight">D MUSEUM</span><br>서울특별시 용산구 독서당로29길 5-6 (한남동 50-1)<br>T. 070-5097-0020</p>
+        </div>
+        <div class="ftBottom">
+            <ul>
+                <li><a href=""><span class="white">개인정보 처리방침</span></a></li>
+                <li><a href="">이용약관</a></li>
+                <li><a href="">영상정보처리기기 운영 관리방침</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+            <p class="copyright">(재)대림문화재단 사업자등록번호: 305-82-09028<br>서울특별시 종로구 자하문로 4길 21(통의동 35-1)<br><span class="copy">COPYRIGHT 2015 BY DAELIM MUSEUM ALL RIGHT RESERVED.</span></p>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

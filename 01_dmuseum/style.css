@@ -1,0 +1,134 @@
+@charset "utf-8";
+.raItme { display: none; }
+.hd { width: 100%; height: 60px; background-color: #fff; position: relative; }
+.mo { display: block; position: absolute; z-index: 10; height: 60px; top: 0; }
+.mo:before { content: ""; display: block; width: 13px; height: 13px; top: 0px; }
+.logoFrame { display: block; width: 100%; height: 60px; text-align: center; }
+.logoFrame img { width: 40%; padding-top: 13px; }
+.calendar { left: 14px; padding-top: 2px; }
+.gnb { right: 14px; padding-top: 2px; }
+.calendar img { width: 80%; float: left; }
+.gnb img { width: 80%; float: right; }
+
+#calendar { position: fixed; left: -100%; top: 60px; width: 100%; height: 100%; z-index: 999; transition: 0.8s; }
+#gnb, #login, #join { position: fixed; right: -100%; top: 0px; width: 100%; height: 100%; z-index: 999; transition: 0.8s; }
+#sel1:checked ~ #calendar { left: 0; }
+#sel2:checked ~ #gnb { right: 0; }
+#sel3:checked ~ #login { right: 0; }
+#sel4:checked ~ #join { right: 0; }
+
+/*일정*/
+#calendar { width: 100%; height: auto; background-color: #333; }
+#calendar .title { text-align: center; background-color: #000; color: #fff; font-weight: normal; font-size: 1em; padding: 10px 0; }
+#calendar .calBox { width: 100%; position: relative; display: block; }
+#calendar .calBox img { display: block; width: 100%; }
+.calBoxImg:after { content: ""; display: block; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); position: absolute; top: 0; left: 0; }
+
+.calBox .calBoxTxt { position: absolute; top: 40%; width: 100%; text-align: center; }
+.calBox .calBoxTxt .calLogo { width: 100%; text-align: center; background-image: url("./img/cal_logo.png"); display: block; height: 100%; background-repeat: no-repeat; background-size: 20%; background-position: center top; display: block; position: absolute; top: -20px; }
+.calBox p { letter-spacing: -1px; color: #fff; }
+.calBox .calTit { font-size: 1.3em; font-weight: bold; line-height: 2;}
+.calBox .calDate { font-size: 0.9em; }
+.calBox .calMore { font-size: 0.8em; border: 1px solid #fff; display: inline; padding: 5px 20px 5px 24px; ; line-height: 6; }
+.calBox .calMore span { content: ""; display: inline-block; background-image: url("./img/cal_arrow.png"); width: 15px; height: 15px; background-repeat: no-repeat; background-size: 100%; vertical-align: -2px; }
+
+/*gnb*/
+#gnb { width: 100%; height: 100%; background-color: #000; }
+.gnbTop { width: 100%; height: 60px;  background-color: #222; }
+.gnbTop ul { padding-left: 20px; padding-top: 14px;}
+.gnbTop li { float: left; padding-top: 10px; }
+.gnbTop li:after { content: ""; display: inline-block; width: 1px; height: 14px; background-color: #909090; margin: 0px 20px; }
+.gnbTop li:last-child::after { display: none; }
+.gnbTop li a { color: #909090; font-size: 1em;  }
+.gnbTop .closeBtn { float: right; padding-right: 14px; }
+.gnbMid { width: 100%; height: auto; background-color: #000; padding: 5%; box-sizing: border-box; }
+.gnbMid .calBox { display: block; clear: both; width: 100%; text-align: center; color: #000; background-color: #fff; margin: 0 auto; padding: 12px 0; ; font-size: 0.9em; }
+
+.gnbMid li { line-height: 4; }
+.gnbMid li .menu { color: #fff; padding-left: 20%; display: block; }
+.gnbMid .item1 .subCall .menu { background-image: url("./img/gnb_item1.png"); background-position: 10px center; background-size: cover; width: 100%; height: 100%; background-size: 30px 30px; background-repeat: no-repeat; }
+.gnbMid .item2 .subCall .menu { background-image: url("./img/gnb_item2.png"); background-position: 10px center; background-size: cover; width: 100%; height: 100%; background-size: 30px 30px; background-repeat: no-repeat; }
+.gnbMid .item3 .subCall .menu { background-image: url("./img/gnb_item3.png"); background-position: 10px center; background-size: cover; width: 100%; height: 100%; background-size: 30px 30px; background-repeat: no-repeat; }
+.gnbMid .item4 .subCall .menu { background-image: url("./img/gnb_item4.png"); background-position: 10px center; background-size: cover; width: 100%; height: 100%; background-size: 30px 30px; background-repeat: no-repeat; }
+.gnbMid .item5 .subCall .menu { background-image: url("./img/gnb_item5.png"); background-position: 10px center; background-size: cover; width: 100%; height: 100%; background-size: 30px 30px; background-repeat: no-repeat; }
+.gnbMid .item6 { background-image: url("./img/gnb_item6.png"); background-position: 10px center; background-size: cover; width: 100%; height: 100%; background-size: 30px 30px; background-repeat: no-repeat; }
+.ck { display: none; }
+.sub { display: none; width: 100%;}
+.sub li { line-height: 2; }
+.sub li a { color: #fff; margin-left: 24%; font-size: 0.8em; border-bottom: 1px solid #666; }
+#ck1:checked ~ .sub { display: block; }
+#ck2:checked ~ .sub { display: block; }
+#ck3:checked ~ .sub { display: block; }
+#ck4:checked ~ .sub { display: block; }
+#ck5:checked ~ .sub { display: block; }
+#ck6:checked ~ .sub { display: block; }
+.gnbBottom { width: 100%; height: auto; background-color: #222; display: block; overflow: hidden; }
+.gnbBottom .col6 { width: 100%; line-height: 80px; }
+.gnbBottom .col6 li { width: 50%; float: left; text-align: center; border: 1px solid #444; box-sizing: border-box; }
+.gnbBottom .col6 li:first-child { border-right: 0px; border-left: 0px; }
+.gnbBottom .col6 li:last-child { border-right: 0px; }
+.gnbBottom .col6 li a { color: #fff; font-size: 0.8em; display: block; font-weight: bold; }
+.gnbBottom .col4 { width: 100%; line-height: 50px; }
+.gnbBottom .col4 li { width: 33.33333%; float: left; text-align: center; position: relative; }
+.gnbBottom .col4 li a { color: #909090; font-size: 0.9em; }
+.gnbBottom .col4 li:after { content: ""; width: 5px; height: 5px; background-color: #909090; display: inline-block; border-radius: 5px; position: absolute; top: 50%; left: 100%; }
+.gnbBottom .col4 li:last-child::after { display: none; }
+
+/*푸터*/
+.ft { width: 100%; height: auto; }
+.address { width: 100%; background-color: #222; padding: 15px; box-sizing: border-box; border-bottom: 1px solid #444; }
+.address p { color: #909090; font-size: 0.9em; letter-spacing: -1px; }
+.address .highlight { color: #fff; font-weight: bold; font-size: 1.2em; }
+.ftBottom { width: 100%; background-color: #222; padding: 15px; box-sizing: border-box; }
+.ftBottom li { float: left; line-height: 1.4; }
+.ftBottom a { color: #909090; float: left; font-size: 0.8em; }
+.ftBottom li:after { content: ""; display: inline-block; width: 1px; height: 11px; background-color: #909090; margin: 1px 20px; }
+.ftBottom li:last-child::after { display: none; }
+.ftBottom .white { color: #fff;}
+.ftBottom .copyright { color: #909090; clear: both; padding-top: 10px; font-size: 0.9em; }
+.ftBottom .copy { font-size: 0.8em; }
+
+
+/*메인 컨텐츠*/
+/*메인 비주얼이미지*/
+.container { width: 100%; height: 100%; }
+.vsBox { width: 100%; height: auto; overflow: hidden;  }
+.vsBox img { width: 100%; height: auto; box-sizing: content-box; }
+
+/*메인 공통*/
+.con1, .con2, .con3, .con4, ..con5 { width: 100%; height: auto; }
+.mainTit { font-size: 1.1em; background-color: #000; color: #fff; padding: 4%; box-sizing: border-box; letter-spacing: -1px; font-weight: normal; }
+.titDescript { font-size: 0.7em; float: right; letter-spacing: -2px; line-height: 2; color: #909090; }
+.more { font-size: 0.7em; float: right; letter-spacing: -1px; line-height: 2; color: #909090; }
+.more:after { content: ""; display: inline-block; width: 12px; height: 12px; background-image: url("./img/cal_arrow.png"); background-size: contain; background-repeat: no-repeat; margin-left: 5px; margin-bottom: -2px; }
+
+/*메인 1. ENJOY! MUSEUM*/
+.con1Box { width: 100%; height: auto; }
+.con1Box > li { width: 100%; padding: 5%; box-sizing: border-box; padding-left: 25%; }
+.con1Box .subTit { font-size: 1em; letter-spacing: -1px; color: #000}
+.con1Box p { font-size: 0.8em; letter-spacing: -1px; color: #000; }
+.con1Lst1 { background-image: url("./img/main_icon1.png"); background-size: 14%; background-repeat: no-repeat; background-position: 6% center; }
+.con1Lst2 { background-image: url("./img/main_icon2.png"); background-size: 14%; background-repeat: no-repeat; background-position: 6% center; }
+.con1Lst3 { background-image: url("./img/main_icon3.png"); background-size: 14%; background-repeat: no-repeat; background-position: 6% center; }
+.con1Lst4 { background-image: url("./img/main_icon4.png"); background-size: 14%; background-repeat: no-repeat; background-position: 6% 25%; }
+.con1Box ul { overflow: hidden; padding: 5%; padding-top: 0; width: 100%; box-sizing: border-box; }
+.con1Box ul li { float: left; width: 50%; }
+.con1Box ul li:first-child a { border-right: 0px; }
+.con1Box ul li a { color: #000; display: block; border: 1px solid #000; padding: 5%; text-align: center; font-size: 14px; }
+
+/*메인 2. UPCOMING PROGRAM, 3.REVIEW*/
+.proBox { width: 90%; margin: 0 auto; margin-top: 5%; margin-bottom: 5%; background-color: #eeeeee; overflow: hidden; }
+.proBox img { width: 100%; }
+.proBox p { letter-spacing: -1px; }
+.upTxt { font-size: 12px; font-weight: bold; margin: 2%; }
+.grey { color: #777; }
+.midTxt { font-size: 17px; margin: 3%; }
+.downTxt { font-size: 12px; margin: 2%; padding-bottom: 2%; float: right; letter-spacing: 0px; }
+
+/*메인 4. NOTICE, 5. EVENT*/
+.con4 ul, .con5 ul { width: 100%; margin: 0 auto; margin-top: 5%; margin-bottom: 5%; }
+.con4 ul li, .con5 ul li { border-bottom: 1px solid #777;  }
+.con4 ul li:last-child { border-bottom: 0; }
+.con5 ul li:last-child { border-bottom: 0; }
+.notiTit { font-size: 14px; padding: 0 5%; margin-top: 5%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.notiDate { font-size: 12px; color: #777; margin-top: 5%; padding: 0 5%; margin-bottom: 5%; }
